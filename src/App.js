@@ -1,25 +1,17 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react'
+import logo from './logo.svg'
+import ActionButton from './ActionButton.jsx'
+import './App.css'
 
-class ActionButton extends Component {
-  render() {
+
+class App extends Component {
+  render () {
     return (
-      <button className="action-button">
-        Submit
-      </button>
+      <div className="App">
+        <ActionButton text="Submit or be Destroyed" />
+      </div>
     )
   }
 }
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <ActionButton />
-      </div>
-    );
-  }
-}
-
-export default App;
+export default App
