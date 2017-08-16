@@ -5,10 +5,15 @@ import './App.css'
 
 
 class App extends Component {
+  handleClick() {
+    alert("Beep")
+  }
   render () {
     return (
       <div className="App">
-        <ActionButton text="Submit or be Destroyed" />
+        <ActionButton
+          text="Submit or be Destroyed"
+          onClick={this.handleClick} />
       </div>
     )
   }
